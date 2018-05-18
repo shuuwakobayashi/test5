@@ -12,10 +12,10 @@ public class MainMyBot {
 		TelegramBotsApi botsApi = new TelegramBotsApi();
 		//  botを登録する
 		try {
-			//botsApi.registerBot(new MyBot());
-			//botsApi.registerBot(new MyBotNews());
-			botsApi.registerBot(new BotText());
-			botsApi.registerBot(new BotText2());
+			botsApi.registerBot(new MyBot());
+			botsApi.registerBot(new MyBotNews());
+			//botsApi.registerBot(new BotText());
+			//botsApi.registerBot(new BotText2());
 		} catch (TelegramApiException e) {
 			e.printStackTrace();
 		}
